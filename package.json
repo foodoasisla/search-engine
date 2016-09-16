@@ -1,0 +1,23 @@
+{
+  "name": "search-engine",
+  "version": "1.0.0",
+  "description": "a simple node search engine ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foodoasisla/search.git"
+  },
+  "author": "Jim Thoburn, Jessica Ayunani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foodoasisla/search/issues"
+  },
+  "homepage": "https://github.com/foodoasisla/search#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "node": "0.0.0"
+  }
+}
