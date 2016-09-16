@@ -18,6 +18,8 @@
   "homepage": "https://github.com/foodoasisla/search#readme",
   "dependencies": {
     "express": "^4.14.0",
-    "node": "0.0.0"
+    "node": "0.0.0",
+    "nodemon": "^1.10.2",
+    "pg": "6.1.0"
   }
 }
