@@ -1,17 +1,20 @@
-# This is a search engine for version 1 of the web site.
+# A search engine for version 1 of the web site.
 
-It’s purpose is to make the list page faster by adding paging.
+## Background
 
-We could add paging with our current server-side tools (Jekyll and GitHub pages), but it would be challenging to sort the results by location at the same time.
+The list page on foodoasis.la currently loads all of the locations at once and then sorts them client-side. This is a slow process, especially on the grocery stores page, which has thousands of locations:
+http://foodoasis.la/grocery-store/?address=San+Pedro
 
-Let’s work around this by making our own search engine (we’re currently thinking of using Node hosted on Heroku). We could  send requests to it with JavaScript and return the closest results (perhaps in [JSONP](https://en.wikipedia.org/wiki/JSONP) format, so it will work across domains).
+We can make this faster by adding paging with our current server-side tools (Jekyll and GitHub pages), but it would be challenging to sort the results by location at the same time.
+
+Let’s work around this by making our own search engine (we’re currently thinking of using Node hosted on Heroku). We could  send client-side requests to it, passing a longitude and latitude and the search engine could return the closest results (perhaps in [JSONP](https://en.wikipedia.org/wiki/JSONP) format, so it will work across domains).
 
 Here’s an example request…
 ```
 https://foodoasisla.heroku.com/?latitude=34.25777331100005&longitude=-118.40466851899998
 ```
 
-And a response…
+And here’s a response…
 ```
 var locations = [
   {
