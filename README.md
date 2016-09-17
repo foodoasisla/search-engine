@@ -4,10 +4,28 @@ It’s purpose is to make the list page faster by adding paging.
 
 We could add paging with our current server-side tools (Jekyll and GitHub pages), but it would be challenging to sort the results by location at the same time.
 
-Let’s work around this by making our own search engine (we’re currently thinking of using Node hosted on Heroku). We could  send requests to it with JavaScript that return a single page with the closest results. JSONP might be a simple way to get the results.
+Let’s work around this by making our own search engine (we’re currently thinking of using Node hosted on Heroku). We could  send requests to it with JavaScript and return the closest results (perhaps in [JSONP](https://en.wikipedia.org/wiki/JSONP) format, so it will work across domains).
 
 Here’s an example request…
+```
 https://foodoasisla.heroku.com/?latitude=34.25777331100005&longitude=-118.40466851899998
+```
+
+And a response…
+```
+var locations = [
+  {
+    name: 'All Peoples Christian Center',
+    type: 'Food Bank',
+    address: '822 E. 20th Street Los Angeles 90011',
+    phone: '213-747-6357',
+    hours: 'Fri 12pm-5pm',
+    latitude: 34.0856924,
+    longitude: -118.1729264
+  },
+  …
+];
+```
 
 ## Data
 
