@@ -47,3 +47,10 @@ Some of the features of the current page are…
 * It accepts an address as a query string parameter, and uses Google’s geolocation API to translate that to an address. Here’s a working example: http://foodoasis.la/list/?address=San+Pedro
 * If no address is available it uses the built-in Geolocation in the user’s browser: http://foodoasis.la/list/
 * It sorts the list on the page so that the closest locations are at the top.
+
+You can also filter the list by “type” of location…
+* http://foodoasis.la/food-bank
+* http://foodoasis.la/community-garden
+* http://foodoasis.la/farmers-market
+* http://foodoasis.la/grocery-store
+* http://foodoasis.la/supermarket
