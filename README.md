@@ -34,13 +34,13 @@ https://github.com/foodoasisla/site/tree/master/_data
 
 ## Logic
 
-And the logic for the list page is here…
+The logic for the list page is in the JavaScript…
 https://github.com/foodoasisla/site/blob/master/assets/js/list.js
 
 ## Features
 
-Some of the features of the list page are…
+Some of the features of the current page are…
 
-It accepts an address as a query string parameter, and uses Google’s geolocation API to translate that to an address. Here’s a working example: http://foodoasis.la/list/?address=Orange%20County
-If no address is available it uses the built-in Geolocation in the user’s browser: http://foodoasis.la/list/
-It sorts the list on the page so that the closest locations are at the top.
+* It accepts an address as a query string parameter, and uses Google’s geolocation API to translate that to an address. Here’s a working example: http://foodoasis.la/list/?address=Orange%20County
+* If no address is available it uses the built-in Geolocation in the user’s browser: http://foodoasis.la/list/
+* It sorts the list on the page so that the closest locations are at the top.
